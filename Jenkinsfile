@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'Workshop'
-      def webAppName = 'Workshop12345'
+      def webAppName = 'berm-app'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'azure-jenkins', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
